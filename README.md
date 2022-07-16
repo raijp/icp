@@ -5,12 +5,12 @@ You need to install git and docker in advance.
 ```
 git clone https://github.com/raijp/icp.git && cd icp
 docker build -t icp-test .
-docker run -d --name icp-test icp-test dfx start
-docker exec -it icp-test /bin/bash -c "npm i && dfx deploy && npm start"
+docker run -d -p 8080:8080 --name icp-test icp-test dfx start
+docker exec -it icp-test /bin/bash -c "npm i && dfx deploy && npm start &"
 
 ## If "npm i" fail, you can run "docker exec -it icp-test npm cache clean --force" and try again.
 
-## Delete container
+## If you want to delete the container, run:
 # docker rm -f icp-test
 ```
 2. Open a browser and navigate to http://localhost:8080/
