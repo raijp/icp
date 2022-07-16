@@ -1,5 +1,6 @@
 # Test Immediately
-Run:
+You need to install git and docker in advance.
+<br>1. Run:
 ```
 git clone https://github.com/raijp/icp.git && cd icp
 docker build -t icp-test .
@@ -8,7 +9,7 @@ docker exec -it icp-test npm i && dfx deploy && npm start
 ## Delete container
 # docker rm -f icp-test
 ```
-Open a browser and navigate to http://localhost:8080/
+2. Open a browser and navigate to http://localhost:8080/
 
 # Tutorial of DFX (Canister SDK)
 <br>Reference : https://internetcomputer.org/docs/current/developer-docs/quickstart/hello10mins
