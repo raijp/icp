@@ -41,8 +41,7 @@ npm --version
 <br><b>Create a project</b>
 <br>Run:
 ```
-mkdir ~/icp-test && cd ~/icp-test
-dfx new hello
+mkdir ~/icp-test && cd ~/icp-test && dfx new hello
 ```
 <br><b>Start the execution environment</b>
 <br>Run:
