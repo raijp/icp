@@ -20,7 +20,7 @@ Note1: If you're gonna upgrade or remove SDK, see https://internetcomputer.org/d
 
 <br><b>Node.js</b>
 <br>Node.js is necessary for rendering the frontend assets and so is necessary to complete this tutorial. 
-<br><br>If you , run:
+<br><br>If you are using an OS with apt-get installed, run:
 ```
 apt-get install npm
 ```
