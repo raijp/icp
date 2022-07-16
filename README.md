@@ -68,4 +68,4 @@ cd ~/icp-test/hello && dfx deploy && npm start
 ```
 
 <br><b>Test the dapp locally via the browser</b>
-Open the browser and navigate to http://localhost:8080/
+<br>Open the browser and navigate to http://localhost:8080/
