@@ -44,6 +44,19 @@ mkdir ~/icp-test && cd ~/icp-test
 dfx new hello
 cd hello
 ```
+<br><b>Deploy the dapp locally</b>
+<br>Run:
+```
+npm install
+```
+<br>You need rsync. If you are using an OS with apt-get installed, run:
+```
+apt-get install rsync
+```
+<br>Run:
+```
+dfx deploy
+```
 <br><b>Start the execution environment</b>
 <br>Run:
 ```
