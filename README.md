@@ -43,19 +43,18 @@ npm --version
 ```
 mkdir ~/icp-test && cd ~/icp-test
 dfx new hello
-cd hello
 ```
 <br><b>Start the execution environment</b>
 <br>Run:
 ```
-dfx start
+cd ~/icp-test/hello && dfx start
 ```
 
 <br><b>Deploy the dapp locally</b>
 <br>Open an another termial and run below.
 <br>Run:
 ```
-npm install
+cd ~/icp-test/hello && npm install
 ```
 <br>You need rsync. If you are using an OS with apt-get installed, run:
 ```
@@ -63,5 +62,5 @@ apt-get install rsync
 ```
 <br>Run:
 ```
-dfx deploy
+cd ~/icp-test/hello && dfx deploy
 ```
