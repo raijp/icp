@@ -9,4 +9,5 @@ To verify that dfx properly installed, run:
 dfx --version
 ```
 Note1: If you wanna upgrade or remove SDK see https://internetcomputer.org/docs/current/developer-docs/build/install-upgrade-remove/
-<br><br>Note2: What is the canister? Canister is the smart contracts installed on the IC.
+<br><br>Note2: What is canisters? Canisters are the smart contracts installed on the IC.
+<br><br>Note3: What is cycles? Cycles refer to a unit of measurement for resource consumption, typically for processing, memory, storage, and network bandwidth consumed on the IC. 
