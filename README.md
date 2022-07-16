@@ -3,8 +3,8 @@ Run:
 ```
 git clone https://github.com/raijp/icp.git
 cd icp
-docker build -t icp .
-docker run -it -d -p 8000:8000 icp
+docker build -t icp-test .
+docker run -it -d -p 8000:8000 icp-test
 ```
 
 # Tutorial of DFX (Canister SDK)

@@ -11,3 +11,10 @@ RUN sh -ci "$(curl -fsSL https://smartcontracts.org/install.sh)"
 RUN dfx --version
 RUN node --version
 RUN npm --version
+
+RUN mkdir ~/icp-test
+WORKDIR ~/icp-test
+RUN dfx new hello
+WORKDIR ~/icp-test/hello
+
+CMD ["dfx", "start"]
