@@ -1,4 +1,4 @@
-# Test Immediately
+# Try it now
 You need to install git and docker in advance.
 <br>
 <br>1. Run:
@@ -8,14 +8,14 @@ docker build -t icp-test .
 docker run -d -p 8080:8080 --name icp-test icp-test dfx start
 docker exec -it icp-test /bin/bash -c "npm i && dfx deploy && npm start"
 
-## If "npm i" fail, you can run "docker exec -it icp-test npm cache clean --force" and try again.
+## If "npm i" fail, you should run "docker exec -it icp-test npm cache clean --force" and try again.
 
 ## If you want to delete the container, run:
 # docker rm -f icp-test
 ```
 2. Open a browser and navigate to http://localhost:8080/
 
-# Tutorial of DFX (Canister SDK)
+# Tutorial for DFX (Canister SDK)
 <br>Reference : https://internetcomputer.org/docs/current/developer-docs/quickstart/hello10mins
 <br><br>To install dfx, run:
 ```
@@ -56,6 +56,7 @@ cd ~/icp-test/hello && dfx start
 <br>Run:
 ```
 cd ~/icp-test/hello && npm install
+# If "npm i" fail, you should run "npm cache clean --force" and try again.
 ```
 <br>You need rsync. If you are using an OS with apt-get installed, run:
 ```
@@ -63,5 +64,8 @@ apt-get install rsync
 ```
 <br>Run:
 ```
-cd ~/icp-test/hello && dfx deploy
+cd ~/icp-test/hello && dfx deploy && npm start
 ```
+
+<br><b>Test the dapp locally via the browser</b>
+Open the browser and navigate to http://localhost:8080/
