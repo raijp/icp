@@ -1,3 +1,9 @@
+# Docker
+```
+docker build -t icp .
+docker run -it -d -p 8000:8000 icp
+```
+
 # DFX (Canister SDK)
 <br>Reference : https://internetcomputer.org/docs/current/developer-docs/quickstart/hello10mins
 <br><br>To install dfx, run:
@@ -17,7 +23,7 @@ Note1: If you're gonna upgrade or remove SDK, see https://internetcomputer.org/d
 <br>We recommend using your system's package manager. 
 <br><br>If you are using debian os, run:
 ```
-apt install npm
+apt-get install npm
 ```
 To verify that node and npm installed, run:
 ```
