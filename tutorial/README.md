@@ -3,7 +3,8 @@ You need to install git and docker in advance.
 <br>
 <br>1. Run:
 ```
-git clone https://github.com/raijp/icp.git && cd icp
+git clone https://github.com/raijp/icp.git
+cd icp/tutorial
 docker build -t icp-test .
 docker run -d -p 8080:8080 --name icp-test icp-test dfx start
 docker exec -it icp-test /bin/bash -c "npm i && dfx deploy && npm start"
