@@ -4,7 +4,7 @@ docker build -t icp .
 docker run -it -d -p 8000:8000 icp
 ```
 
-# DFX (Canister SDK)
+# Tutorial of DFX (Canister SDK)
 <br>Reference : https://internetcomputer.org/docs/current/developer-docs/quickstart/hello10mins
 <br><br>To install dfx, run:
 ```
