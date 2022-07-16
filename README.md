@@ -4,14 +4,11 @@ Run:
 git clone https://github.com/raijp/icp.git && cd icp
 docker build -t icp-test .
 docker run -d --name icp-test icp-test dfx start
-docker exec -it icp-test /bin/bash
-npm i && dfx deploy
-curl http://127.0.0.1:8000
-exit
+docker exec -it icp-test npm i && dfx deploy && npm start
 ## Delete container
 # docker rm -f icp-test
-
 ```
+Open a browser and navigate to http://localhost:8080/
 
 # Tutorial of DFX (Canister SDK)
 <br>Reference : https://internetcomputer.org/docs/current/developer-docs/quickstart/hello10mins
