@@ -1,4 +1,4 @@
-# Try it now
+# Try it now locally (not on-chain)
 You need to install git and docker in advance.
 <br>
 <br>1. Run:
