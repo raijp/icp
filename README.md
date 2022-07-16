@@ -1,4 +1,4 @@
-# Run Immediately
+# Test Immediately
 Run:
 ```
 git clone https://github.com/raijp/icp.git

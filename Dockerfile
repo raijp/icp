@@ -12,9 +12,9 @@ RUN dfx --version
 RUN node --version
 RUN npm --version
 
-RUN mkdir ~/icp-test
-WORKDIR ~/icp-test
+RUN mkdir -p /root/icp-test
+WORKDIR /root/icp-test
 RUN dfx new hello
-WORKDIR ~/icp-test/hello
+WORKDIR /root/icp-test/hello
 
 CMD ["dfx", "start"]
