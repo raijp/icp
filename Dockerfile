@@ -18,5 +18,6 @@ WORKDIR /root/icp-test
 RUN dfx new hello
 WORKDIR /root/icp-test/hello
 RUN npm set timeout=1200000
+RUN npm cache clean --force
 
 CMD ["/bin/bash"]
