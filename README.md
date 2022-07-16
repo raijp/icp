@@ -4,7 +4,8 @@ Run:
 git clone https://github.com/raijp/icp.git
 cd icp
 docker build -t icp-test .
-docker run -d -p 8000:8000 --name icp-test icp-test
+docker run -it -d -p 8000:8000 --name icp-test icp-test
+docker exec -it icp-test dfx start
 ```
 
 # Tutorial of DFX (Canister SDK)

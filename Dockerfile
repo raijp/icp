@@ -17,4 +17,4 @@ WORKDIR /root/icp-test
 RUN dfx new hello
 WORKDIR /root/icp-test/hello
 
-CMD ["dfx", "start"]
+CMD ["/bin/bash"]
