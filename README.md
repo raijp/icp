@@ -4,9 +4,10 @@ Run:
 git clone https://github.com/raijp/icp.git
 cd icp
 docker build -t icp-test .
-docker run -d -p 8000:8000 --name icp-test icp-test dfx start
-## For checking
-# docker exec -it icp-test /bin/bash
+docker run -d --name icp-test icp-test dfx start
+docker exec -it icp-test /bin/bash
+curl http://127.0.0.1:8000
+exit
 ## Delete container
 # docker rm -f icp-test
 
