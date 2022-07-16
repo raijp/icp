@@ -1,11 +1,15 @@
 # Test Immediately
 You need to install git and docker in advance.
+<br>
 <br>1. Run:
 ```
 git clone https://github.com/raijp/icp.git && cd icp
 docker build -t icp-test .
 docker run -d --name icp-test icp-test dfx start
 docker exec -it icp-test npm i && dfx deploy && npm start
+
+## If "npm i" fail, you can run "docker exec -it icp-test npm cache clean --force".
+
 ## Delete container
 # docker rm -f icp-test
 ```
