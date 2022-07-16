@@ -1,5 +1,8 @@
-# Docker
+# Run Immediately
+Run:
 ```
+clone https://github.com/raijp/icp.git
+cd icp
 docker build -t icp .
 docker run -it -d -p 8000:8000 icp
 ```
@@ -32,7 +35,7 @@ npm --version
 <br><b>Create a project</b>
 <br>Run:
 ```
-mkdir ~/icp-test && cd icp-test
+mkdir ~/icp-test && cd ~/icp-test
 dfx new hello
 cd hello
 ```
