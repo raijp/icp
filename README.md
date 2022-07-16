@@ -1,8 +1,7 @@
 # Test Immediately
 Run:
 ```
-git clone https://github.com/raijp/icp.git
-cd icp
+git clone https://github.com/raijp/icp.git && cd icp
 docker build -t icp-test .
 docker run -d --name icp-test icp-test dfx start
 docker exec -it icp-test /bin/bash
