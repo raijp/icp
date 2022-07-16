@@ -1,7 +1,7 @@
 # Run Immediately
 Run:
 ```
-clone https://github.com/raijp/icp.git
+git clone https://github.com/raijp/icp.git
 cd icp
 docker build -t icp .
 docker run -it -d -p 8000:8000 icp
