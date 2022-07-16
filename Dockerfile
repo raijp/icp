@@ -16,5 +16,3 @@ RUN mkdir -p /root/icp-test
 WORKDIR /root/icp-test
 RUN dfx new hello
 WORKDIR /root/icp-test/hello
-
-CMD ["/bin/bash"]
