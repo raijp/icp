@@ -20,8 +20,7 @@ Note1: If you're gonna upgrade or remove SDK, see https://internetcomputer.org/d
 
 <br><b>Node.js</b>
 <br>Node.js is necessary for rendering the frontend assets and so is necessary to complete this tutorial. 
-<br>We recommend using your system's package manager. 
-<br><br>If you are using debian os, run:
+<br><br>If you , run:
 ```
 apt-get install npm
 ```
@@ -29,4 +28,16 @@ To verify that node and npm installed, run:
 ```
 node --version
 npm --version
+```
+<br><b>Create a project</b>
+<br>Run:
+```
+mkdir ~/icp-test && cd icp-test
+dfx new hello
+cd hello
+```
+<br><b>Start the execution environment</b>
+<br>Run:
+```
+dfx start
 ```
