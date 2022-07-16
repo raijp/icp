@@ -17,7 +17,5 @@ RUN mkdir -p /root/icp-test
 WORKDIR /root/icp-test
 RUN dfx new hello
 WORKDIR /root/icp-test/hello
-RUN npm install
-RUN dfx deploy
 
 CMD ["/bin/bash"]
