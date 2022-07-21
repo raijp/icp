@@ -76,3 +76,16 @@ cd ~/icp-test/hello && dfx deploy && npm start
 dfx canister call hello_backend greet everyone
 ```
 
+<br><b>Commands to see wallet and balance</b>
+```
+# See ICP wallet.
+dfx ledger account-id
+# See ICP balance.
+dfx ledger --network ic balance
+# See IC wallet.
+dfx identity --network ic get-wallet
+# See IC balance.
+dfx wallet --network ic balance
+# See IC status (including balance)
+dfx canister --network=ic status <canister id>
+```
